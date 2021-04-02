@@ -14,10 +14,10 @@
         .demo {
             width: 50px;
             height: 50px;
-            background: rgb(0, 255, 234);
+            background: rgb(255, 38, 0);
             position: absolute;
-            left: 30%;
-            top: 20%;
+            left: 50%;
+            top: 50%;
             transform: translate(-50%, -50%);
         }
     </style>
@@ -26,14 +26,16 @@
 <body>
     <!-- 圆圈 Start -->
     <h1>-----</h1>
-    <div class="demo"></div>
+    <div class="demo"><img src="img/about-1.jpg" alt="没有图" width="50px"></div>
     <script src="./node_modules/animejs/lib/anime.min.js"></script>
     <script>
         anime({
             targets:'.demo',
             rotate:180,
             translateX:200,
-            translateY:100            
+            translateY:100,
+            autoplay:true, 
+            loop:20,          
         })
     </script>
 
