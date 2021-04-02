@@ -6,10 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- anime js 动画 -->
+
+    <!-- 评分CSS -->
     <link rel="stylesheet" type="text/css" href="css/starability-minified/starability-fade.min.css" />
+    <style>
+        .demo {
+            width: 50px;
+            height: 50px;
+            background: rgb(0, 255, 234);
+            position: absolute;
+            left: 30%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 
 <body>
+    <!-- 圆圈 Start -->
+    <h1>-----</h1>
+    <div class="demo"></div>
+    <script src="./node_modules/animejs/lib/anime.min.js"></script>
+    <script>
+        anime({
+            targets:'.demo',
+            rotate:180,
+            translateX:200,
+            translateY:100            
+        })
+    </script>
+
+    <h1>-----</h1>
+    <!-- 圆圈 End  -->
+
+
     <!--评分 Start -->
     <form>
         <!-- Change starability-basic to different class to see animations. -->
@@ -43,21 +74,21 @@
             行内
             script
             外面引用   -->
-    <input type="button" value="1243124" onclick="alert('狗蛋')" onclick="www.baidu.com">
-    <!-- 按钮跳转网页方法 -->
+<!--     <input type="button" value="1243124" onclick="alert('狗蛋')" onclick="www.baidu.com">
+ -->    <!-- 按钮跳转网页方法 -->
     <input type="button" value="打开链接">
     <input type="button" value="1dafsfsda24fdgdsfgsdgdfgdg124"
         onclick="window.location.href='https://www.zhihu.com/hot'">
-    <script>
+<!--     <script>
         alert('狗蛋蛋')
     </script>
-    <script src="js/main.js"></script>
+ -->    <!-- <script src="js/main.js"></script> -->
 
-    <script>
+<!--     <script>
         var myName = prompt('Type somethin');//注意分号
         console.log('随便吧');
     </script>
-    myName
+ -->
 
     <!-- JS End -->
 
