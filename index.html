@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8animate__swinganimate__swinganimate__swinganimate__swinganimate__swinganimate__swing">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -20,9 +20,39 @@
             transform: translate(-50%, -50%);
         }
     </style>
+    <style>
+        /* Grow */
+        .hvr-grow {
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            transition-duration: 0.3s;
+            transition-property: transform;
+        }
+
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+            transform: scale(1.1);
+        }
+    </style>
+
 </head>
 
 <body>
+    <!-- 悬停 Start -->
+    <script src="./node_modules/hover.css/css/hover.css"></script>
+    <div class="hvr-grow">demo1
+        <img src="/img/about-1.jpg" class="hvr-icon" alt="" height="50px">
+    </div>
+
+    <!-- 悬停 End -->
+
+
+
     <!-- animate css Start -->
     <h1 class="animate__animated animate__swing">An animated element</h1>
     <!-- animate css End -->
