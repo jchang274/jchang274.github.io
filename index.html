@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- anime js 动画 -->
-
     <!-- 评分CSS -->
     <link rel="stylesheet" type="text/css" href="css/starability-minified/starability-fade.min.css" />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <style>
         .demo {
             width: 50px;
@@ -24,19 +23,24 @@
 </head>
 
 <body>
+    <!-- animate css Start -->
+    <h1 class="animate__animated animate__swing">An animated element</h1>
+    <!-- animate css End -->
+
+
     <!-- 圆圈 Start -->
     <h1>-----</h1>
     <div class="demo"><img src="img/about-1.jpg" alt="没有图" width="50px"></div>
     <script src="./node_modules/animejs/lib/anime.min.js"></script>
     <script>
         anime({
-            targets:'.demo',
-            rotate:180,
-            translateX:200,
-            translateY:20,
+            targets: '.demo',
+            rotate: 180,
+            translateX: 200,
+            translateY: 20,
             delay: 100,
-            autoplay:true, 
-            loop:true,          
+            autoplay: true,
+            loop: true,
         })
     </script>
 
@@ -77,17 +81,19 @@
             行内
             script
             外面引用   -->
-<!--     <input type="button" value="1243124" onclick="alert('狗蛋')" onclick="www.baidu.com">
- -->    <!-- 按钮跳转网页方法 -->
+    <!--     <input type="button" value="1243124" onclick="alert('狗蛋')" onclick="www.baidu.com">
+ -->
+    <!-- 按钮跳转网页方法 -->
     <input type="button" value="打开链接">
     <input type="button" value="1dafsfsda24fdgdsfgsdgdfgdg124"
         onclick="window.location.href='https://www.zhihu.com/hot'">
-<!--     <script>
+    <!--     <script>
         alert('狗蛋蛋')
     </script>
- -->    <!-- <script src="js/main.js"></script> -->
+ -->
+    <!-- <script src="js/main.js"></script> -->
 
-<!--     <script>
+    <!--     <script>
         var myName = prompt('Type somethin');//注意分号
         console.log('随便吧');
     </script>
