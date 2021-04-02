@@ -10,7 +10,7 @@
 
 <body>
     <!-- 标题标签 Start -->
-    <h1>一级标签</h1>
+    <h1 id="one">一级标签</h1>
     <h2>二级标签</h2>
     <h3>三级标签</h3>
     <h4>四级标签</h4>
@@ -49,7 +49,7 @@
 
     <!-- 图像标签、路径 Start  -->
     <!-- title给图像的标题 -->
-    <img src="/img/about-1.jpg" alt="坑的图像" title="微信头像">
+    <img src="/img/" alt="坑的图像" title="微信头像">
     <!-- 显示不出来的文字提示 -->
     <img src="/img/about-.jpg" alt="坑的图像">
     <!-- 定义图像尺寸 -->
@@ -62,9 +62,38 @@
 
     <!-- 超链接 Start -->
     <!-- 新窗口打开 -->
+    <br>
     <a href="www.baidu.com" target="_blank">Baidu</a>
+    <!-- 内部链接 -->
+    <br>
+    <a href="about.html" target="_blank">介绍</a>
+    <!-- 空连接 -->
+    <br>
+    <a href="#" target="_blank">公司地址</a>
+    <!-- 元素的链接 -->
+    <br>
+    <a href="www.baidu.com" target="_blank" ><img src="/img//about-1.jpg" alt="" height="50"></a>
+    <!-- 当页跳转，锚点连接 id-->
+    <br>
+    <a href="#one">跳转一级标题ID</a>
     <!-- 超链接 End-->
-    
+    <!-- 特殊字符 Start -->
+    空&nbsp格;
+    &copy;
+    &it;
+    &gt;
+    &amp;
+    &yen;
+    &reg;
+    &deg;
+    &plusmn;
+    &times;
+    &divide;
+    &sup2;
+    &sup3;
+    <!-- 特殊字符 End -->
+
+
     
 </body>
 
