@@ -57,7 +57,7 @@
     <!-- 等比例缩放 -->
     <img src="/img/about-1.jpg" alt="" width="30">
     <!-- 边框 -->
-    <img src="/img/about-1.jpg" border="5" width="15">
+    <label for="chifan"><img src="/img/about-1.jpg" border="5" width="15" ></label>
     <!-- 图像标签、路径 End -->
 
     <!-- 超链接 Start -->
@@ -186,7 +186,31 @@
     <!-- 列表 End-->
 
     <!-- 表单 Start -->
-
+    <!-- 目的：收集信息 -->
+    <form action="" method="POST" name="Information" align="center">
+        A:<input type="text" name="username" value="Please input" maxlength="10">
+        <br>
+        B:<input type="button" value="发送验证码到手机">
+        <br>
+        <!-- 多选，复选框 -->
+        C:  <label for="chifan">吃饭</label><input type="checkbox" id="chifan" name="dosome">  睡觉<input type="checkbox" name="dosome" checked> 打豆豆 <input type="checkbox" name="dosome">
+        <br>
+        D: <input type="password">
+        <br>
+        E： <input type="file" value="上传你的私人照片">
+        <br>
+        F: <input type="hidden">
+        <br>
+        G: <input type="image">
+        <br>
+        <!-- 单选 -->
+        H: 大<input type="radio" name="size" checked> 小<input type="radio" name="size">
+        <br>
+        I: <input type="reset" value="重置所有">
+        <br>
+        J: <input type="submit" value="免费注册，提交信息">
+        <br>
+    </form>
     <!-- 表单 End -->
 
 
