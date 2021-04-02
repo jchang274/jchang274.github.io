@@ -9,6 +9,7 @@
     <!-- 评分CSS -->
     <link rel="stylesheet" type="text/css" href="css/starability-minified/starability-fade.min.css" />
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover.css">
     <style>
         .demo {
             width: 50px;
@@ -20,35 +21,27 @@
             transform: translate(-50%, -50%);
         }
     </style>
-    <style>
-        /* Grow */
-        .hvr-grow {
-            display: inline-block;
-            vertical-align: middle;
-            transform: translateZ(0);
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-            backface-visibility: hidden;
-            -moz-osx-font-smoothing: grayscale;
-            transition-duration: 0.3s;
-            transition-property: transform;
-        }
-
-        .hvr-grow:hover,
-        .hvr-grow:focus,
-        .hvr-grow:active {
-            transform: scale(1.1);
-        }
-    </style>
 
 </head>
 
 <body>
     <!-- 悬停 Start -->
     <script src="./node_modules/hover.css/css/hover.css"></script>
-    <div class="hvr-grow">demo1
+    <div class="hvr-push">demo1
         <img src="/img/about-1.jpg" class="hvr-icon" alt="" height="50px">
     </div>
+    
+    <a href="#" class="hvr-grow">指我放大</a>
+    <a href="#" class="hvr-shrink">指我缩小</a>
+    <a href="#" class="hvr-shrink">指我缩小</a>
+    <a href="#" class="hvr-shrink">指我缩小</a>
+    <a href="#" class="hvr-shrink">指我缩小</a>
+    <a href="#" class="hvr-shrink">指我缩小</a>
+    <a href="#" class="hvr-shrink"></a>
+    <br>
+    <h1><a href="#" class="hvr-pulse-grow ">心跳</a></h1>
 
+    
     <!-- 悬停 End -->
 
 
