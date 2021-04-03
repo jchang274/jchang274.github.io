@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(248, 248, 221);
+}
+
+.pay {
+    background-color: rgb(235, 176, 176);
+    border-radius: 80px;
+    
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-10%,-10%);
+    border-left: lightgreen;
+    box-shadow: lightcoral;
+}
+
+.centerImg{
+    align-items: baseline;
+}
