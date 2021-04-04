@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- # JS CDN Start -->
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- # JS CDN End-->
+    
+    
+    
+    
+    <!-- #样式start -->
     <!-- 我的CSS引用 -->
     <link rel="stylesheet" href="css/my.css">
     <!-- 评分CSS -->
@@ -23,17 +32,32 @@
             transform: translate(-50%, -50%);
         }
     </style>
-
+    <!-- #样式end -->
 </head>
 
 <body>
+    <!-- # Vue学习Start -->
+    <div id="app">
+        {{ message }}
+    </div>
+
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '这个是用Vue显示的文本信息'
+            }
+        });
+    </script>
+    <!-- # Vue学习End -->
+
     <form action="" class="pay">
-        <img src="img/wechatpay.jpg" alt="" width="200" >
-        <img src="img/alipay.jpg" alt="" width="200" >
+        <img src="img/wechatpay.jpg" alt="" width="200">
+        <img src="img/alipay.jpg" alt="" width="200">
     </form>
 
 
-    <!-- 悬停 Start -->
+    <!-- # 悬停 Start -->
     <script src="./node_modules/hover.css/css/hover.css"></script>
     <div class="hvr-push">demo1
         <img src="/img/about-1.jpg" class="hvr-icon" alt="" height="50px">
@@ -50,7 +74,7 @@
     <h1><a href="#" class="hvr-pulse-grow ">心跳</a></h1>
 
 
-    <!-- 悬停 End -->
+    <!-- # 悬停 End -->
 
 
 
@@ -187,7 +211,7 @@
     <!-- title给图像的标题 -->
     <img src="/img/" alt="坑的图像" title="微信头像">
     <!-- 显示不出来的文字提示 -->
-    <img src="/img/about-.jpg" alt="坑的图像">
+    <img src="/img/about-不显示图像.jpg" alt="坑的图像">
     <!-- 定义图像尺寸 -->
     <img src="/img/about-1.jpg" alt="" width="30" height="100">
     <!-- 等比例缩放 -->
